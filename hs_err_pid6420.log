@@ -1,0 +1,120 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (virtualspace.cpp:114), pid=6420, tid=4168
+#  fatal error: os::release_memory failed
+#
+# JRE version:  (7.0_45-b18) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.45-b08 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0089b800):  JavaThread "Unknown thread" [_thread_in_vm, id=4168, stack(0x002e0000,0x00330000)]
+
+Stack: [0x002e0000,0x00330000],  sp=0x0032f630,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x18df51]
+V  [jvm.dll+0x187cc6]
+V  [jvm.dll+0x1640bc]
+V  [jvm.dll+0x16459b]
+V  [jvm.dll+0x89a16]
+V  [jvm.dll+0x874e6]
+V  [jvm.dll+0x861f2]
+V  [jvm.dll+0x905c3]
+V  [jvm.dll+0x13dab4]
+V  [jvm.dll+0x1605fc]
+V  [jvm.dll+0xc8ebf]
+C  [java.exe+0x13c1]
+C  [java.exe+0x1e33]
+C  [java.exe+0xa591]
+C  [java.exe+0xa61b]
+C  [kernel32.dll+0x4ee6c]
+C  [ntdll.dll+0x63ab3]
+C  [ntdll.dll+0x63a86]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0089b800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=4168, stack(0x002e0000,0x00330000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00d50000 - 0x00d7f000 	C:\Program Files\Java\jdk1.7.0_45\bin\java.exe
+0x77860000 - 0x779a1000 	C:\windows\SYSTEM32\ntdll.dll
+0x755b0000 - 0x75684000 	C:\windows\system32\kernel32.dll
+0x74a30000 - 0x74a7b000 	C:\windows\system32\KERNELBASE.dll
+0x76930000 - 0x769d1000 	C:\windows\system32\ADVAPI32.dll
+0x75400000 - 0x754ac000 	C:\windows\system32\msvcrt.dll
+0x76800000 - 0x76819000 	C:\windows\SYSTEM32\sechost.dll
+0x76750000 - 0x767f2000 	C:\windows\system32\RPCRT4.dll
+0x751d0000 - 0x75299000 	C:\windows\system32\USER32.dll
+0x76630000 - 0x7667e000 	C:\windows\system32\GDI32.dll
+0x779b0000 - 0x779ba000 	C:\windows\system32\LPK.dll
+0x76680000 - 0x7671d000 	C:\windows\system32\USP10.dll
+0x73480000 - 0x7361e000 	C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x76840000 - 0x76897000 	C:\windows\system32\SHLWAPI.dll
+0x76820000 - 0x7683f000 	C:\windows\system32\IMM32.DLL
+0x76560000 - 0x7662c000 	C:\windows\system32\MSCTF.dll
+0x76c00000 - 0x76cbf000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\msvcr100.dll
+0x6b470000 - 0x6b7f0000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\client\jvm.dll
+0x5e200000 - 0x5e207000 	C:\windows\system32\WSOCK32.dll
+0x75690000 - 0x756c5000 	C:\windows\system32\WS2_32.dll
+0x754b0000 - 0x754b6000 	C:\windows\system32\NSI.dll
+0x73780000 - 0x737b2000 	C:\windows\system32\WINMM.dll
+0x75520000 - 0x75525000 	C:\windows\system32\PSAPI.DLL
+0x774e0000 - 0x774ec000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\verify.dll
+0x77450000 - 0x77470000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\java.dll
+0x77380000 - 0x77393000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\zip.dll
+0x73910000 - 0x739fb000 	C:\windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: Package1.Login_page
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter\Driver;C:\Program Files\Windows Live\Shared
+USERNAME=Samsung
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 54 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 2 (1 cores per cpu, 2 threads per core) family 6 model 54 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 2085012k(188016k free), swap 5230740k(8828k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.45-b08) for windows-x86 JRE (1.7.0_45-b18), built on Oct  8 2013 06:02:43 by "java_re" with unknown MS VC++:1600
+
+time: Mon Aug 31 15:14:16 2015
+elapsed time: 0 seconds
+
